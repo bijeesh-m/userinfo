@@ -6,7 +6,7 @@ const { default: mongoose } = require("mongoose");
 app.use(express.json());
 
 app.use(
-  cors({ origin: "https://userinfo-frontend.vercel.app/", credentials: true })
+  cors({ origin: "https://userinfo-frontend.vercel.app", credentials: true })
 );
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING).then(() => {
